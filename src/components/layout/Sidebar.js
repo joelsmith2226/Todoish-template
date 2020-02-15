@@ -7,6 +7,7 @@ import { FaChevronDown,
 
 import { useSelectedProjectValue } from '../../context';
 import { Projects } from "../Projects";
+import { AddProject } from "../AddProject";
 
 export const Sidebar = () => {
    const { setSelectedProject } = useSelectedProjectValue;
@@ -38,7 +39,7 @@ export const Sidebar = () => {
          </div>
 
          <ul className="sidebar__projects">{showProjects && <Projects />}</ul>
-         {showProjects && <Projects />}
+         {showProjects && <AddProject />}
       </div>
    )
 };
